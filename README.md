@@ -1,70 +1,63 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+AI-Powered Task Recommendation System
+This project is a full-stack application built with Flask (backend) and React (frontend) to manage tasks and provide AI-based recommendations for task prioritization.
 
-In the project directory, you can run:
+Frontend
+Features
+1. User Authentication
 
-### `npm start`
+Register and login functionality with secure password storage.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Task Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+CRUD operations for tasks (Create, Read, Update, Delete).
+Tasks include attributes like title, description, status, priority, deadline, and estimated completion time.
 
-### `npm test`
+3. AI-Powered Recommendations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+AI suggests task prioritization based on deadlines, complexity, and estimated completion time using a rule-based model.
 
-### `npm run build`
+3. Dashboard
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+View tasks by status and priority in My Tasks tab.
+Visualizations for overdue and upcoming tasks in doughnut chart.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Setup Instructions:
+Frontend (React)
+1. git clone [<repository-url>](https://github.com/Pranav-Sawant1996/tasks)
+2. npm install
+3. npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Assumptions
+1. Authentication:
+User credentials are stored securely with hashed passwords using bcrypt.
 
-### `npm run eject`
+2. Task Attributes:
+Each task includes the following:
+Title, Description, Status (Pending, In Progress, Completed), Priority (Extreme, Moderate, Low), Deadline, Estimated Completion Time, complexity.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. AI Model:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A simple rule-based algorithm prioritizes tasks. Example logic:
+Tasks with closer deadlines get higher priority.
+High-complexity tasks are prioritized over low-complexity tasks.
+Shorter estimated completion time tasks are favored to minimize workload.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+AI Research Task Explanation
 
-## Learn More
+Hugging face pre-trained api model for sentiment analysis
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Authorization:
+The Authorization header is required to authenticate the API request. It uses the Hugging Face API token (HUGGINGFACE_API_TOKEN) that must be kept secure.
+This token allows access to specific models or services offered by Hugging Face.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Payload:
+The payload is a dictionary containing the text to be analyzed, passed as the "inputs" field. The text will be sent to the model for processing.
 
-### Code Splitting
+3. API Request:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The requests.post method is used to send a POST request to the Hugging Face API. It includes the headers for authorization and payload with the input text.
+The URL (HUGGINGFACE_API_URL) is assumed to point to the specific model or service you want to call on the Hugging Face platform (such as sentiment analysis, text classification, etc.).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
