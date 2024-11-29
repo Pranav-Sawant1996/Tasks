@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+}
+.dashboard {
+  background-color: #f5f8ff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: start;
+}
+
+.header {
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  width: 96vw;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+}
+
+.logo {
+  color: #000;
+  font: 500 32px Inter, sans-serif;
+}
+
+.logoHighlight {
+  color: #ff6767;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  margin-left: 39px;
+}
+
+.searchInput {
+  border: none;
+  background-color: #f5f8ff;
+  padding: 10px;
+  font: 600 12px Montserrat, sans-serif;
+  color: #a1a3ab;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchIcon,
+.notificationIcon,
+.messageIcon {
+  width: 36px;
+  height: 36px;
+}
+
+.userActions {
+  display: flex;
+  gap: 9px;
+  margin-left: auto;
+}
+
+.dateInfo {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  margin-left: 39px;
+}
+
+.currentDay {
+  color: #000;
+  font-size: 15px;
+}
+
+.currentDate {
+  color: #3abeff;
+  font-size: 14px;
+}
+
+.userAvatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  margin-left: 109px;
+}
+
+.contentWrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1364px;
+}
+
+.sidebar {
+  width: 18%;
+  background-color: #ff6767;
+  color: #fff;
+  padding: 52px 21px;
+  font: 500 16px Inter, sans-serif;
+  position: fixed;
+  height: 100%;
+  margin-top: 115px;
+}
+
+.userInfo {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.userName {
+  font-weight: 600;
+}
+
+.userEmail {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sidebarNav {
+  margin-top: 30px;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navItem {
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.active {
+  background-color: #fff;
+  color: #ff6767;
+  border-radius: 14px;
+  padding: 7px 16px;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  /* margin-top: 300px; */
+}
+
+.logoutIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px;
+  margin-left: 261px;
+  margin-top: 116px;
+}
+
+.taskList {
+  background-color: #f5f8ff;
+  border-radius: 14px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.taskListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskListTitle {
+  display: flex;
+  align-items: center;
+  color: #ff6767;
+  font: 500 15px Inter, sans-serif;
+}
+
+.todoIcon {
+  width: 23px;
+  height: 23px;
+  margin-right: 9px;
+}
+
+.addTaskButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #a1a3ab;
+  font: 600 12px Montserrat, sans-serif;
+  cursor: pointer;
+}
+
+.addIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.currentDate {
+  font: 400 12px Inter, sans-serif;
+  color: #000;
+  margin-top: 10px;
+}
+
+.todayIndicator {
+  color: #a1a3ab;
+  margin-left: 11px;
+}
+
+.taskItem {
+  border: 1px solid #a1a3ab;
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-top: 17px;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px 0px 0px;
+}
+
+.taskTitle {
+  display: flex;
+  align-items: center;
+  font: 600 16px Inter, sans-serif;
+  color: #000;
+}
+
+.checkIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+}
+
+.taskDescription {
+  color: #747474;
+  font: 400 14px Inter, sans-serif;
+  margin-top: 10px;
+}
+
+.taskMeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+.moreOptions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+.moreIcon {
+  width: 14px;
+  height: 3px;
+}
+
+.taskImage {
+  width: 88px;
+  height: 88px;
+  border-radius: 14px;
+}
+
+.taskDetails {
+  display: flex;
+  justify-content: space-between;
+  font: 400 10px Inter, sans-serif;
+  margin-top: 14px;
+}
+
+.priorityModerate {
+  color: #42ade2;
+}
+
+.statusNotStarted {
+  color: #f21e1e;
+}
+
+.statusInProgress {
+  color: #0225ff;
+}
+
+.taskStatus {
+  background-color: #f5f8ff;
+  border-radius: 14px;
+  padding: 24p;
+}
+
+.taskStatusChart {
+  background-color: #f5f8ff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-left: 21px;
+  box-shadow: 5px 10px 8px #888888;
+}
+.taskStatusTitle {
+  display: flex;
+  align-items: center;
+  color: #ff6767;
+  font: 500 15px Inter, sans-serif;
+}
+
+.statusIcon {
+  width: 23px;
+  height: 23px;
+  margin-right: 9px;
+}
+
+.statusChart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.statusItem {
+  text-align: center;
+  width: 137px;
+}
+
+.statusBar {
+  height: 140px;
+  border-radius: 70px;
+}
+
+.statusLabel {
+  margin-top: 10px;
+  font: 500 15px Inter, sans-serif;
+  color: #000;
+}
+
+.completedTasks {
+  background-color: #f5f8ff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-left: 21px;
+  box-shadow: 5px 10px 8px #888888;
+  margin-top: 15px;
+}
+
+.completedTasksTitle {
+  display: flex;
+  align-items: center;
+  color: #f24e1e;
+  font: 500 15px Inter, sans-serif;
+}
+
+.completedIcon {
+  width: 21px;
+  height: 24px;
+  margin-right: 11px;
+}
+
+.completedTaskItem {
+  border: 1px solid #a1a3ab;
+  border-radius: 14px;
+  padding: 11px 16px;
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statusCompleted {
+  color: #05a301;
+}
+
+.completedAgo {
+  color: #747474;
+  font: 500 10px Inter, sans-serif;
+  margin-top: 11px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 20px;
+  }
+
+  .userAvatar {
+    margin-left: 10px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .mainContent {
+    width: 100%;
+  }
+
+  .sidebar {
+    padding: 20px;
+  }
+
+  .logoutButton {
+    margin-top: 40px;
+  }
+
+  .mainContent {
+    padding: 20px;
+  }
+}

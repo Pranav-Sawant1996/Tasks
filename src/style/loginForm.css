@@ -1,0 +1,264 @@
+.loginContainer {
+  background-color: #ff6767;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 1024px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 129px 70px;
+}
+
+@media (max-width: 991px) {
+  .loginWrapper {
+    width: 100%;
+    height: 100%;
+    padding: 100px 20px;
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.loginCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 124px 100px 45px rgba(0, 0, 0, 0);
+  margin-bottom: -26px;
+  width: 700px;
+  height: 50vh;
+  max-width: 100%;
+  padding: 100px;
+}
+
+@media (max-width: 991px) {
+  .loginCard {
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 400px;
+  }
+}
+
+.cardContent {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .cardContent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-items: stretch; */
+    gap: 0;
+  }
+}
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0;
+}
+
+@media (max-width: 991px) {
+  .formColumn {
+    width: 100%;
+  }
+}
+
+.formWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  color: #212427;
+  font: 500 16px Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .formWrapper {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.formTitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@media (max-width: 991px){
+  .formTitle{
+    font-size: 25px;
+  }
+}
+
+.inputField {
+  border-radius: 8px;
+  align-self: stretch;
+  display: flex;
+  margin-top: 25px;
+  gap: 22px;
+  color: #999;
+  flex-wrap: wrap;
+  padding: 15px 18px;
+  border: 1px solid #565454;
+}
+
+.input_box {
+  padding: 8px 8px 8px 0px;
+}
+
+.inputIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 30px;
+}
+
+.inputText {
+  flex-grow: 1;
+  width: 465px;
+  flex-basis: auto;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .inputText {
+    max-width: 100%;
+  }
+}
+
+.rememberMeWrapper {
+  display: flex;
+  margin-top: 25px;
+  gap: 26px;
+}
+
+.rememberMeCheckbox {
+  align-self: start;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #565454;
+}
+
+.rememberMeLabel {
+  flex-basis: auto;
+}
+
+.loginButton {
+  border-radius: 5px;
+  background-color: #ff9090;
+  margin-top: 25px;
+  color: #f8f9fb;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  .loginButton {
+    white-space: initial;
+    padding: 8px 20px;
+  }
+}
+
+.socialLoginWrapper {
+  display: flex;
+  margin-top: 20px;
+  gap: 23px;
+}
+
+@media (max-width: 991px) {
+  .socialLoginWrapper {
+    margin-top: 40px;
+  }
+}
+
+.socialLoginText {
+  flex-grow: 1;
+}
+
+.socialLoginIcons {
+  aspect-ratio: 3.75;
+  object-fit: contain;
+  object-position: center;
+  width: 105px;
+  max-width: 100%;
+}
+
+.signupPrompt {
+  margin-top: 15px;
+}
+
+.signupLink {
+  color: #008bd9;
+  cursor: pointer;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .imageColumn {
+    width: 100%;
+  }
+}
+
+.loginImage {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 57px;
+}
+
+@media (max-width: 991px) {
+  .loginImage {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

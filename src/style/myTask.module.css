@@ -1,0 +1,448 @@
+.taskManagement {
+    background-color: #f5f8ff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: start;
+  }
+  
+  .header {
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 37px 74px 24px;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding: 20px;
+    }
+  }
+  
+  .todoTitle {
+    color: #000;
+    font: 600 32px Inter, sans-serif;
+  }
+  
+  .todoTitle span {
+    color: #ff6767;
+  }
+  
+  .searchBar {
+    border-radius: 8px;
+    background-color: #f5f8ff;
+    box-shadow: -26px 108px 31px rgba(0, 0, 0, 0);
+    display: flex;
+    padding-left: 15px;
+    gap: 40px;
+    color: #a1a3ab;
+    font: 600 12px Montserrat, sans-serif;
+  }
+  
+  .searchInput {
+    border: none;
+    background: transparent;
+    color: #a1a3ab;
+    font: inherit;
+  }
+  
+  .searchIcon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .headerActions {
+    display: flex;
+    gap: 9px;
+  }
+  
+  .actionIcon {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .dateInfo {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+  }
+  
+  .day {
+    color: #000;
+    font-size: 15px;
+  }
+  
+  .date {
+    color: #3abeff;
+    font-size: 14px;
+  }
+  
+  .userAvatar {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    margin: 13px 0 0 109px;
+  }
+  
+  @media (max-width: 991px) {
+    .userAvatar {
+      margin-left: 10px;
+    }
+  }
+  
+  .mainContent {
+    width: 100%;
+    max-width: 1357px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .sidebar {
+    width: 26%;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  .sidebarContent {
+    border-radius: 0 8px 8px 0;
+    background-color: #ff6767;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+    padding: 53px 21px;
+    font: 500 16px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebarContent {
+      margin-top: 40px;
+      padding: 20px;
+    }
+  }
+  
+  .userName {
+    font-weight: 600;
+    align-self: center;
+  }
+  
+  .userEmail {
+    font-size: 12px;
+    font-weight: 400;
+    align-self: center;
+  }
+  
+  .menuItem {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 34px 0 0 16px;
+  }
+  
+  @media (max-width: 991px) {
+    .menuItem {
+      margin-left: 10px;
+    }
+  }
+  
+  .menuIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .menuText {
+    margin: auto 0;
+  }
+  
+  .activeMenuItem {
+    border-radius: 14px;
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    margin-top: 29px;
+    gap: 16px;
+    color: #ff6767;
+    padding: 18px 16px;
+  }
+  
+  .logoutItem {
+    margin-top: 300px;
+  }
+  
+  @media (max-width: 991px) {
+    .logoutItem {
+      margin-top: 40px;
+    }
+  }
+  
+  .taskList {
+    width: 37%;
+  }
+  
+  @media (max-width: 991px) {
+    .taskList {
+      width: 100%;
+    }
+  }
+  .myTasks{
+    display: flex;
+  }
+  .taskListContent {
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 19px 28px;
+    border: 1px solid rgba(161, 163, 171, 0.63);
+  }
+  
+  @media (max-width: 991px) {
+    .taskListContent {
+      max-width: 100%;
+      margin-top: 17px;
+      padding: 20px;
+    }
+  }
+  
+  .taskListTitle {
+    color: #000;
+    align-self: start;
+    font: 600 16px Montserrat, sans-serif;
+  }
+  
+  .taskListDivider {
+    width: 31px;
+    height: 2px;
+    background-color: #f24e1e;
+    margin-top: 10px;
+  }
+  
+  .taskItem {
+    border-radius: 14px;
+    background-color: rgba(161, 163, 171, 0.17);
+    display: flex;
+    margin-top: 17px;
+    gap: 13px;
+    padding: 7px 16px;
+    border: 1px solid #a1a3ab;
+    cursor: pointer;
+  }
+  
+  .taskInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: Inter, sans-serif;
+  }
+
+  .task{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .taskTitle {
+    display: flex;
+    gap: 14px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .taskDescription {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 21px;
+  }
+  
+  .taskMeta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 7px;
+    font-size: 10px;
+    color: #000;
+    width: 100%;
+  }
+  
+  .taskPriority {
+    font-weight: 500;
+    /* flex-grow: 1; */
+  }
+  
+  .taskStatus {
+    font-weight: 400;
+  }
+  
+  .taskImage {
+    width: 88px;
+    height: 88px;
+    border-radius: 14px;
+    margin-top: 9px;
+  }
+  
+  .taskCreationDate {
+    color: #a1a3ab;
+    /* margin-top: 8px; */
+    font: 400 10px Inter, sans-serif;
+  }
+  
+  .taskDetails {
+    width: 53%;
+    margin-left: 70px;
+  }
+  
+  @media (max-width: 991px) {
+    .taskDetails {
+      width: 100%;
+    }
+  }
+  
+  .taskDetailsContent {
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    padding: 16px 20px;
+    border: 1px solid rgba(161, 163, 171, 0.63);
+  }
+  
+  @media (max-width: 991px) {
+    .taskDetailsContent {
+      max-width: 100%;
+      margin-top: 18px;
+    }
+  }
+  
+  .taskDetailHeader {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  
+  
+  .taskDetailInfo {
+    align-self: end;
+    display: flex;
+    margin-top: 48px;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  @media (max-width: 991px) {
+    .taskDetailInfo {
+      margin-top: 40px;
+    }
+  }
+  
+  .taskDetailTitle {
+    font-size: 16px;
+    font-weight: 600;
+    align-self: stretch;
+  }
+  
+  .taskFilter{
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    /* display: flex; */
+    width: 29%;
+    /* flex-direction: column; */
+    padding: 19px 28px;
+    border: 1px solid rgba(161, 163, 171, 0.63);
+    margin-left: 70px;
+    height: 300px;
+  }
+  
+  .filter{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .submitButton {
+    border-radius: 6px;
+    background-color: #ff6767;
+    color: #fff;
+    align-self: flex-start;
+    margin-top: 15px;
+    padding: 9px 26px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+  
+  .taskDetailCreationDate {
+    color: #a1a3ab;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  
+  .taskDetailDescription {
+    color: #747474;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 19px;
+  }
+  .taskIcons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .taskIcons svg{
+    color: white;
+    background-color: #ff6767;
+    padding: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .taskDetailActions {
+    align-self: end;
+    margin-top: 42px;
+  }
+  
+  @media (max-width: 991px) {
+    .taskDetailActions {
+      margin-top: 40px;
+    }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
