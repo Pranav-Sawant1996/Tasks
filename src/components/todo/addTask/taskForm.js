@@ -263,7 +263,7 @@ console.log("Current Form Values:", formValues.complexity);
               <div className={styles.priorityOption}>
                 <input
                   onChange={onChange}
-                  checked={value === 3} // Check if the value is "3" for high complexity
+                  checked={value == 3} // Check if the value is "3" for high complexity
                   type="radio"
                   id="complexityHigh"
                   className={styles.priorityInput}
@@ -283,7 +283,7 @@ console.log("Current Form Values:", formValues.complexity);
               <div className={styles.priorityOption}>
                 <input
                   onChange={onChange}
-                  checked={value === 2} // Check if the value is "2" for medium complexity
+                  checked={value == 2} // Check if the value is "2" for medium complexity
                   type="radio"
                   id="complexityMedium"
                   className={styles.priorityInput}
@@ -303,7 +303,7 @@ console.log("Current Form Values:", formValues.complexity);
               <div className={styles.priorityOption}>
                 <input
                   onChange={onChange}
-                  checked={value === 1} // Check if the value is "1" for low complexity
+                  checked={value == 1} // Check if the value is "1" for low complexity
                   type="radio"
                   id="complexityLow"
                   className={styles.priorityInput}
